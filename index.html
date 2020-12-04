@@ -70,14 +70,41 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Software Developer</h1>
-      <p class="text-muted">Computer Science Student - URI</p>
+      <p class="text-muted text-small">Computer Science Student - URI</p>
       <p class="lead text-muted">Below are some school and personal projects I have completed. Please check out a few demonstrations and the implementations behind them. Contact information and an About me section can be accessed using the menu button in the navigation bar.</p>
       <p>
-        <a href="./images/Resume.pdf" class="btn btn-primary my-2">View Resume</a>
+        <a href="./Resources/Resume.pdf" class="btn btn-primary my-2">View Resume</a>
         <a href="#Education" class="btn btn-secondary my-2">Education</a>
       </p>
     </div>
   </section>
+
+  <div class="modal fade" id="UMmodal" tabindex="-1" role="dialog" aria-labelledby="UMmodalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title lead" id="exampleModalLabel"><b>UM Demo Instructions</b></h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol class="card-text">
+            <li>Download the demo</li>
+            <li>Extract contents of the zip archive</li>
+            <li>Open a linux terminal</li>
+            <li>Navigate to the ExecutableUM directory</li>
+            <li>run "./um ./Programs/advent.umz" <small><i>(a text-adventure game)</i></small></li>
+            <li>run "./um ./Programs/codex.umz" <small><i>(a 32-bit OS with a puzzle)</i></small></li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <p class="text-muted small text-left pr-4">To compile a personal version clone the repository <br>and follow the instructions in the provided <small>README</small></p>
+          <a href="Resources/ExecutableUM.zip" class="btn btn-outline-primary">Download Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="album py-5 bg-light">
     <div class="container">
@@ -91,7 +118,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="https://github.com/tcole8899/UniversalMachine" class="btn btn-sm btn-outline-primary">Repository</a>
-                  <a href="https://github.com/tcole8899/UniversalMachine/tree/main/Executable/README.md" class="btn btn-sm btn-outline-secondary">Demo</a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#UMmodal">Demo</a>
                 </div>
                 <small class="text-muted">C</small>
               </div>
