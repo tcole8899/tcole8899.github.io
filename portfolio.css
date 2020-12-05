@@ -1,5 +1,5 @@
 .jumbotron {
-  padding-top: 3rem;
+  padding-top: 8rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
   background-color: #fff;
@@ -9,6 +9,11 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+}
+
+.landing {
+  flex-flow: column;
+  height: 100vh;
 }
 
 .jumbotron p:last-child {
