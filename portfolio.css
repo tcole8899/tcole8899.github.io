@@ -28,11 +28,23 @@
   max-width: 40rem;
 }
 
+.tab {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.education {
+  flex-flow: column;
+  min-height: 88vh;
+}
+
 footer {
-  padding-top: 3rem;
+  flex-flow: column;
+  min-height: 12vh;
+  padding-top: 5vh;
   padding-bottom: 3rem;
 }
 
 footer p {
-  margin-bottom: .25rem;
+  float: left;
 }
